@@ -1,0 +1,7 @@
+{
+    "require": {
+        "pablovf/phputils": "dev-master",
+        "league/oauth2-google": "^4.0",
+        "twbs/bootstrap": "5.1.3"
+    }
+}

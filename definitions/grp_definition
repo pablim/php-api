@@ -1,0 +1,1 @@
+{"className": "Grp", "attributes": [{"name": "codigo", "increment": "yes", "visible": "no", "key": "yes", "null": "no", "type": "integer"}, {"null": "no", "type": "string", "name": "nome"}], "label": "Grupo"}

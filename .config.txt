@@ -1,0 +1,8 @@
+nameProject: phpapi
+dbName: phpapi
+domainFolder: model/domain
+dataAccessFolder: model/dao
+viewFolder: pages
+sgbdName: mysql
+sgbdUser: phpapi
+sgbdPassword: 123

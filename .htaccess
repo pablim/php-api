@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	Options -Indexes
+
+	DirectoryIndex /config/instancier.php?url=index
+
+	# regras especificas
+
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ /config/instancier.php?url=$1 [QSA,L]
+
+	#RewriteRule ^([a-z0-9]+)/$ /config/instancier.php?p1=$1 [NC,L]
+	#RewriteRule ^([a-z0-9]+)/([a-z0-9]+)/?$ /config/instancier.php?p1=$1&p2=$2 [NC,L]
+	#RewriteRule ^([a-z0-9]+)/([a-z0-9]+)/([a-z0-9]+)/?$ /config/instancier.php?p1=$1&p2=$2&p3=$3 [NC,L]
+
+</IfModule>

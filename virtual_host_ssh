@@ -1,0 +1,23 @@
+<VirtualHost *:80>
+	ServerAdmin vazsk8@gmail.com
+	ServerName phpapi
+	ServerAlias phpapi.com
+	DocumentRoot /home/pablo/phpapi
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:443>
+	ServerAdmin vazsk8@gmail.com
+	ServerName phpapi
+	ServerAlias phpapi.com
+	DocumentRoot /home/pablo/phpapi
+
+	SSLEngine on
+	SSLCertificateFile /etc/apache2/ssl/phpapicert.pem
+	SSLCertificateKeyFile /etc/apache2/ssl/phpapicert.key
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
